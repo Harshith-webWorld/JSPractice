@@ -4,19 +4,19 @@ import "./App.css";
 function Routers() {
   return (
     <div className="App">
-        <BrowserRouter>
-          <div className="Flex-column">
+      <BrowserRouter>
+        <div className="Flex-column">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
-          </div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<h1>Not Found ewith Route</h1>} />
-          </Routes>
-        </BrowserRouter>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<h1>Not Found ewith Route</h1>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
@@ -32,5 +32,5 @@ const About = () => {
 };
 
 const Contact = () => {
-  return <h1>--- Contact page   ---</h1>;
+  return <h1>--- Contact page ---</h1>;
 };

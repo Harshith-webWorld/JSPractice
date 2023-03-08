@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import { incrementCount, decrementCount } from "./redux/action/countAction";
 import Routers from "./Routers";
+import PokerGame from "./PokerGame";
 
 function App() {
   const dispatch = useDispatch();
@@ -12,6 +13,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Routers />
+        <br />
+
+        {`-------------------------------------`}
+        <br />
+        <br />
+        <PokerGame />
+        <br />
+
+        {`-------------------------------------`}
+        <br />
+        <br />
+
         <div className="Flex-column">
           <button onClick={() => dispatch(incrementCount())}>Increment</button>
           <h1>{count}</h1>
